@@ -1,7 +1,19 @@
 import java.util.ArrayList;
 import java.util.Calendar;
 
-
+/**
+ * 
+ * Пример создания экземпляра без аргументов:
+ * <blockquote><pre>
+ *     {@code Worker worker = new Worker();}
+ * </pre></blockquote>
+ *  Пример создания экземпляра с аргументом arg0 и arg7 аргументов:
+ * <blockquote><pre>
+ *     {@code Worker worker = new Worker()
+		.arg1("Step")
+		.arg7(8);}
+ * </pre></blockquote>
+ */
 public class Worker {
 	private int arg0;
 	private String arg1;
@@ -20,6 +32,24 @@ public class Worker {
 	private int arg14;
 	private int arg15;
 
+	/**
+	 * @param arg0(int)
+	 * @param arg1(String)
+	 * @param arg2(Boolean)
+	 * @param arg3(Foo)
+	 * @param arg4(String)
+	 * @param arg5(Calendar)
+	 * @param arg6(String)
+	 * @param arg7(int)
+	 * @param arg8(ArrayList<Integer>)
+	 * @param arg9(Character)
+	 * @param arg10(int)
+	 * @param arg11(int)
+	 * @param arg12(String)
+	 * @param arg13(int)
+	 * @param arg14(int)
+	 * @param arg15(int)
+	 */
 	public Worker() {
 		super();
 	}
