@@ -5,13 +5,14 @@ import java.util.Calendar;
  * 
  * Пример создания экземпляра без аргументов:
  * <blockquote><pre>
- *     {@code Worker worker = new Worker();}
+ *     {@code Worker worker = new WorkerBilder().build();}
  * </pre></blockquote>
  *  Пример создания экземпляра с аргументом arg0 и arg7 аргументов:
  * <blockquote><pre>
- *     {@code Worker worker = new Worker()
+ *     {@code Worker worker = new WorkerBilder()
 		.arg1("Step")
-		.arg7(8);}
+		.arg7(8)
+		.build();}
  * </pre></blockquote>
  */
 public class Worker {
@@ -33,7 +34,7 @@ public class Worker {
 	private int arg15;
 
 	/**
-	 * Экземпляр класса создается с помощью конструктора {@code new WorkerBilder()}
+	 * Экземпляр класса создается с помощью конструктора {@code WorkerBilder()}
 	 */
 	public Worker(WorkerBilder workerBilder) {
 		if (workerBilder == null) {
