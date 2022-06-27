@@ -33,7 +33,7 @@ public class Worker {
 	private int arg15;
 
 	/**
-	 *
+	 * Экземпляр класса создается с помощью конструктора {@code new WorkerBilder()}
 	 */
 	public Worker(WorkerBilder workerBilder) {
 		if (workerBilder == null) {
