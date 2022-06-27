@@ -133,4 +133,18 @@ public class Worker {
 		this.arg15 = arg15;
 		return this;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Worker [arg0=").append(arg0).append(", arg1=").append(arg1).append(", arg2=")
+				.append(arg2).append(", arg3=").append(arg3).append(", arg4=").append(arg4)
+				.append(", arg5=").append(arg5).append(", arg6=").append(arg6)
+				.append(", arg7=").append(arg7).append(", arg8=").append(arg8)
+				.append(", arg9=").append(arg9).append(", arg10=").append(arg10)
+				.append(", arg11=").append(arg11).append(", arg12=").append(arg12)
+				.append(", arg13=").append(arg13).append(", arg14=").append(arg14)
+				.append(", arg15=").append(arg15).append("]");
+		return builder.toString();
+	}
 }
