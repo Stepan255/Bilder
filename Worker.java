@@ -33,105 +33,28 @@ public class Worker {
 	private int arg15;
 
 	/**
-	 * @param arg0(int)
-	 * @param arg1(String)
-	 * @param arg2(Boolean)
-	 * @param arg3(Foo)
-	 * @param arg4(String)
-	 * @param arg5(Calendar)
-	 * @param arg6(String)
-	 * @param arg7(int)
-	 * @param arg8(ArrayList<Integer>)
-	 * @param arg9(Character)
-	 * @param arg10(int)
-	 * @param arg11(int)
-	 * @param arg12(String)
-	 * @param arg13(int)
-	 * @param arg14(int)
-	 * @param arg15(int)
+	 *
 	 */
-	public Worker() {
-		super();
-	}
-
-	public Worker arg0(int arg0){
-		this.arg0 = arg0;
-		return this;
-	}
-
-	public Worker arg1(String arg1){
-		this.arg1 = arg1;
-		return this;
-	}
-
-	public Worker arg2(Boolean arg2){
-		this.arg2 = arg2;
-		return this;
-	}
-
-	public Worker arg3(Foo arg3){
-		this.arg3 = arg3;
-		return this;
-	}
-
-	public Worker arg4(String arg4){
-		this.arg4 = arg4;
-		return this;
-	}
-
-	public Worker arg5(Calendar arg5){
-		this.arg5 = arg5;
-		return this;
-	}
-
-	public Worker arg6(String arg6){
-		this.arg6 = arg6;
-		return this;
-	}
-
-	public Worker arg7(int arg7){
-		this.arg7 = arg7;
-		return this;
-	}
-
-	public Worker arg8(ArrayList<Integer> arg8){
-		this.arg8 = arg8;
-		return this;
-	}
-
-	public Worker arg9(Character arg9){
-		this.arg9 = arg9;
-		return this;
-	}
-
-	public Worker arg10(int arg10){
-		this.arg10 = arg10;
-		return this;
-	}
-
-	public Worker arg11(int arg11){
-		this.arg11 = arg11;
-		return this;
-	}
-
-	public Worker arg12(String arg12){
-		this.arg12 = arg12;
-		return this;
-	}
-
-	public Worker arg13(int arg13){
-		this.arg13 = arg13;
-		return this;
-	}
-
-	public Worker arg14(int arg14){
-		this.arg14 = arg14;
-		return this;
-	}
-
-	public Worker arg15(int arg15){
-		this.arg15 = arg15;
-		return this;
+	public Worker(WorkerBilder workerBilder) {
+		if (workerBilder == null) {
+			throw new IllegalArgumentException("Please provide worker builder to build worker object.");
+		}
+		this.arg0 = workerBilder.arg0;
+		this.arg1 = workerBilder.arg1;
+		this.arg2 = workerBilder.arg2;
+		this.arg3 = workerBilder.arg3;
+		this.arg4 = workerBilder.arg4;
+		this.arg5 = workerBilder.arg5;
+		this.arg6 = workerBilder.arg6;
+		this.arg7 = workerBilder.arg7;
+		this.arg8 = workerBilder.arg8;
+		this.arg9 = workerBilder.arg9;
+		this.arg10 = workerBilder.arg10;
+		this.arg11 = workerBilder.arg11;
+		this.arg12 = workerBilder.arg12;
+		this.arg13 = workerBilder.arg13;
+		this.arg14 = workerBilder.arg14;
+		this.arg15 = workerBilder.arg15;
 	}
 
 	@Override
